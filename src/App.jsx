@@ -1,4 +1,4 @@
-import { MY_SVGS } from './assets/Images'
+import { mySvgs } from './assets/Images'
 import { URLS } from './assets/utils/consts'
 import './assets/Style/main/App.css'
 
@@ -31,10 +31,10 @@ function App() {
     <div className="App">
       <div>
         <a href={URLS.reactjsURL} target="_blank">
-          <img src={MY_SVGS.VITE_LOGO} className="logo" alt="Vite logo" /> 
+          <img src={mySvgs.viteLogo} className="logo" alt="Vite logo" /> 
         </a>
         <a href={URLS.vitejsURL} target="_blank">
-          <img src={MY_SVGS.BITCOIN_LOGO} className="logo react" alt="React logo" />
+          <img src={mySvgs.bitcoinLogo} className="logo react" alt="React logo" />
         </a>
       </div>
       <h1>Dashboard component goes here</h1>

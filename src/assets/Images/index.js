@@ -1,8 +1,8 @@
 //SVGS
-import BITCOIN_LOGO from './bitcoinLogo.svg'
-import VITE_LOGO from './vite.svg'
+import bitcoinLogo from './bitcoinLogo.svg'
+import viteLogo from './vite.svg'
 
-export const MY_SVGS = {
-    BITCOIN_LOGO,
-    VITE_LOGO
+export const mySvgs = {
+    bitcoinLogo,
+    viteLogo
 }
