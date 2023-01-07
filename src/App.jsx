@@ -33,7 +33,7 @@ function App() {
         <a href={URLS.reactjsURL} target="_blank">
           <img src={mySvgs.viteLogo} className="logo" alt="Vite logo" /> 
         </a>
-        <a href={URLS.vitejsURL} target="_blank">
+        <a href={URLS.bitcoinURL} target="_blank">
           <img src={mySvgs.bitcoinLogo} className="logo react" alt="React logo" />
         </a>
       </div>

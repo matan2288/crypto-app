@@ -1,4 +1,5 @@
 export const URLS = {
-reactjsURL: 'https://vitejs.dev',
-vitejsURL: 'https://vitejs.dev'
+reactjsURL: 'https://reactjs.org',
+vitejsURL: 'https://vitejs.dev',
+bitcoinURL: 'https://bitcoin.org/en/'
 }
