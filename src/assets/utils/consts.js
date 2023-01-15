@@ -1,7 +1,8 @@
 export const URLS = {
 reactjsURL: 'https://reactjs.org',
 vitejsURL: 'https://vitejs.dev',
-bitcoinURL: 'https://bitcoin.org/en/'
+bitcoinURL: 'https://bitcoin.org/en/',
+cryptoCompareURL: 'https://www.cryptocompare.com'
 }
 
 export const API_RELATED_URLS = {
