@@ -1,9 +1,36 @@
-.coin-row-main-container{
-border: solid red 1px;
-display: flex;
+.coin-row-main-container {
+    border-bottom: solid 1px white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 
-.data-row-icon{
-    height: 40px;
-    width: 40px;
-}
+    &:hover {
+        background: #1f1f1f;
+        transition-duration: 0.5s;
+    }
+
+    .data-row-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .coin-names-container {
+        display: flex;
+        align-items: center;
+        text-align: start;
+        margin: 0 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .coin-full-name {
+            margin-right: 5px;
+        }
+
+        .coin-short-name {
+            color: wheat;
+            font-size: 12px;
+        }
+    }
 }

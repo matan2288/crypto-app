@@ -7,6 +7,7 @@ export const coinSlice = createSlice({
       coins: [],
       coinsListLimit: 10,
       currentCurrency: 'USD',
+      currenciesAvaiable: ['USD','EUR','GBP','CAD','AUD','ILS'],
       isLoading: false  
     },
     reducers:{

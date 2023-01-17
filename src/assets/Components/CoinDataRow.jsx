@@ -1,16 +1,23 @@
 import React from 'react'
 import { URLS } from '../utils/consts'
+import { useSelector } from 'react-redux'
 import '../Style/Components/coin-data-row-style.scss'
 
 export const CoinDataRow = (props) => {
+  const currentCurrency = useSelector(state=>state.coinsStore.currentCurrency)
+
   const { Name, FullName, ImageUrl } = props.coin.CoinInfo;
-  const { PRICE } = props.coin.DISPLAY.USD;
+  const { PRICE } = props.coin.DISPLAY[currentCurrency];
  
+
   return (
     <div className='coin-row-main-container'>
-      <img src={URLS.cryptoCompareURL+ImageUrl} alt={Name} className="data-row-icon"/>
-      <h5>{FullName}</h5>
-      <h5>{PRICE}</h5>
+      <img src={URLS.cryptoCompareURL + ImageUrl} alt={Name} className='data-row-icon' />
+      <div className='coin-names-container'>
+        <span className="coin-full-name">{FullName}</span>
+        <span className="coin-short-name">{Name}</span>
+      </div>
+      <span className='coin-price'>{PRICE}</span>
     </div>
   )
 }

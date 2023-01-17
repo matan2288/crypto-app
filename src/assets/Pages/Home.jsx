@@ -1,7 +1,7 @@
 import React from 'react'
 import { URLS } from '../utils/consts'
 import { mySvgs } from '../Images'
-import { CoinDashboard } from '../Components/CoinDashboard'
+import { CoinsDashboard } from '../Components/CoinsDashboard'
 import '../Style/Pages/homepage-style.scss'
 
 export const Home = () => {
@@ -15,7 +15,7 @@ export const Home = () => {
         <img src={mySvgs.bitcoinLogo} className="logo react" alt="React logo" />
       </a>
     </div>
-      <CoinDashboard />
+      <CoinsDashboard />
       <div className="card">
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
