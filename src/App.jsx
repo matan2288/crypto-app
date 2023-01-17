@@ -4,10 +4,10 @@ import './Style/main/App.css';
 
 function App() {
 	return (
-		<div className="App">
-			<Navbar />
-			<SiteRoutes />
-		</div>
+	<div className="App">
+	  <Navbar />
+	  <SiteRoutes />
+	</div>
 	);
 }
 
