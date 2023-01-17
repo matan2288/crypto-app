@@ -1,4 +1,3 @@
-
 import coinReducer from './coinsStore/coinStore'
 
 const reducersIndex = {

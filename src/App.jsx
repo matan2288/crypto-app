@@ -1,7 +1,7 @@
 
-import { SiteRoutes } from './assets/Pages/Routes/SiteRoutes';
-import { Navbar } from './assets/Components/Navbar'
-import './assets/Style/main/App.css'
+import { SiteRoutes } from './Pages/Routes/SiteRoutes';
+import { Navbar } from './Components/Navbar'
+import './Style/main/App.css'
 
 
 function App() {
