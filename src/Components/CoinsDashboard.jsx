@@ -2,27 +2,28 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CoinDataRow } from './CoinDataRow';
 import { DashboardController } from './DashboardController';
-import { getCoinsFetch } from '../Redux/coinsStore/coinStore';
+import { getCoinsFetch, showMoreCoins } from '../Redux/coinsStore/store';
 import { map } from 'lodash';
 import '../Style/Components/coin-dashboard-style.scss';
 
 export const CoinsDashboard = () => {
-	const coinListGlobalState = useSelector((state) => state.coinsStore.coins);
+	const { coins, coinsListLimit } = useSelector((state) => state.coinsStore);
+
 	const dispatch = useDispatch();
 
 	useEffect(() => {
 		dispatch(getCoinsFetch());
-	}, [dispatch]);
-	console.log(coinListGlobalState);
+	}, [coinsListLimit]);
+	console.log(coins);
 
 	return (
 		<div className="coin-dashboard-main-container">
 			<h1>Coins Dashboard</h1>
 			<DashboardController />
-			{map(coinListGlobalState, (coin) => (
+			{map(coins, (coin) => (
 				<CoinDataRow coin={coin} key={coin.CoinInfo.Id} />
 			))}
-			<p>load more here</p>
+			<button onClick={() => dispatch(showMoreCoins())}>load more here</button>
 		</div>
 	);
 };

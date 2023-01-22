@@ -1,5 +1,5 @@
 import { call, put, takeEvery, select } from 'redux-saga/effects'
-import { getCoinsSuccess } from './coinStore';
+import { getCoinsSuccess } from './store';
 
 function* fetchCoins() {
   const state = yield select();

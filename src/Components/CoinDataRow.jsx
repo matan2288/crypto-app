@@ -14,7 +14,7 @@ export const CoinDataRow = (props) => {
 		<div className="coin-row-main-container">
 			<img src={URLS.cryptoCompareURL + ImageUrl} alt={Name} className="data-row-icon" />
 			<div className="coin-names-container">
-				<Link to={`/coin/${FullName.toLowerCase()}`}>
+				<Link to={`/coin/${FullName.toLowerCase()}`} state={props.coin}>
 					<span className="coin-full-name">{FullName}</span>
 					<span className="coin-short-name">{Name}</span>
 				</Link>

@@ -1,4 +1,4 @@
-import coinReducer from './coinsStore/coinStore'
+import coinReducer from './coinsStore/store'
 
 const reducersIndex = {
         coinReducer
