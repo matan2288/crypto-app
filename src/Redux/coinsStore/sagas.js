@@ -18,7 +18,7 @@ function* fetchCoins() {
 
 
 function* coinsSaga() {
-  yield takeEvery('coins/getCoinsFetch', fetchCoins)
+  yield takeEvery('coins/getCoinsFetch', fetchCoins);
 }
 
 export default coinsSaga
