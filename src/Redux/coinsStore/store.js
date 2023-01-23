@@ -17,8 +17,8 @@ export const coinSlice = createSlice({
     getCoinsSuccess: (state, action) => {
       state.coins = action.payload;
     },
-    getCoinsFailure: (state) => {
-      state.isLoading = false;
+    setLoader: (state, action) => {
+      state.isLoading = action.payload;
     },
     showMoreCoins: (state) => {
       state.coinsListLimit = state.coinsListLimit + 5;
@@ -26,6 +26,6 @@ export const coinSlice = createSlice({
   }
 })
 
-export const { getCoinsFetch, getCoinsSuccess, getCoinsFailure, showMoreCoins } = coinSlice.actions;
+export const { getCoinsFetch, getCoinsSuccess, setLoader, showMoreCoins } = coinSlice.actions;
 
 export default coinSlice.reducer;

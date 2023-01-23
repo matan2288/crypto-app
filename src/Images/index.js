@@ -6,3 +6,11 @@ export const mySvgs = {
     bitcoinLogo,
     viteLogo
 }
+ 
+
+//Gifs
+import spinnerAnimation from './gif/spinner.gif'
+
+export const myGifs = {
+    spinnerAnimation
+}

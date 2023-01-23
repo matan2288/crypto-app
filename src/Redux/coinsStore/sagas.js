@@ -11,7 +11,6 @@ function* fetchCoins() {
     yield put(getCoinsSuccess(formattedCoins.Data));
   }
   catch (error) {
-    yield put(getCoinsSuccess([]));
     alert("Couldn't get coins");
   }
 }
